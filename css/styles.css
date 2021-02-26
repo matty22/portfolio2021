@@ -1,0 +1,44 @@
+
+/* Nav Section Styles */
+.navbar {
+  background-color: #5c636e;
+}
+
+.navbar-item {
+  color: #ffffff;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #393e46;
+  border-bottom: 8px solid #1d97c1;
+}
+
+.hero-body p {
+  color: #ffffff;
+}
+
+/* About Section Styles */
+.about {
+
+}
+
+/* Project Section Styles */
+.projects {
+  background-color: #f5f5f5;
+}
+
+/* Talks Section Styles */
+.talks {
+  border-bottom: 8px solid #1d97c1;
+}
+
+/* Contact Section Styles */
+.contact {
+  background-color: #393e46;
+}
+
+/* Footer Section Styles */
+.footer {
+  background-color: #5c636e;
+}
