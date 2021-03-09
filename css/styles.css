@@ -1,12 +1,15 @@
 
+
 /* Nav Section Styles */
 .navbar {
-  background-color: #5c636e;
+  /* background-color: #5c636e; */
+  background-color: #1d97c1;
 }
 
 .navbar-item {
   color: #ffffff;
 }
+
 
 /* Hero Section Styles */
 .hero {
@@ -18,25 +21,35 @@
   color: #ffffff;
 }
 
-/* About Section Styles */
-.about {
 
+/* About Section Styles */
+.about  {
+  
 }
+
+.about h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
 
 /* Project Section Styles */
 .projects {
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
 }
+
 
 /* Talks Section Styles */
 .talks {
   border-bottom: 8px solid #1d97c1;
 }
 
+
 /* Contact Section Styles */
 .contact {
   background-color: #393e46;
 }
+
 
 /* Footer Section Styles */
 .footer {
