@@ -60,7 +60,6 @@
 
 .talkImage {
   border-radius: 12px;
-  height: 200px;
 }
 
 
@@ -85,11 +84,21 @@
 
 #submitButton {
   float: right;
-  /* border: 2px solid #1d97c1; */
 }
 
 
 /* Footer Section Styles */
 .footer {
   background-color: #5c636e;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer span {
+  color: #1d97c1;
 }
