@@ -111,12 +111,12 @@
     <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
       <h2>CONTACT</h2>
       <h6>I'm open to opportunities about blah blah blah. Let's work together on something interesting!</h6>
-      <form action="">
+      <form id="contactForm" action="">
         <label for="emailInput">Your email</label>
-        <input class="input" id="emailInput" type="email" />
+        <input class="input" id="emailInput" type="email" name="email" />
         <label for="messageInput">Your message</label>
-        <textarea class="textarea" name="" id="messageInput" rows="5"></textarea>
-        <input type="submit" class="button is-primary" id="submitButton" value="Submit" />
+        <textarea class="textarea" name="message" id="messageInput" rows="5"></textarea>
+        <button type="submit" class="button is-primary" id="submitButton">Submit</button> 
       </form>
     </div>
   </section>
@@ -145,5 +145,13 @@
       <p><span>&copy;2021</span> Matt Leonard</p>
     </div>
   </footer>
+  <div class="container toastRow">
+    <div class="content" id="successToast">
+      <p>Your submission was successful.</p>
+    </div>
+    <div class="content" id="errorToast">
+      <p>Something went wrong. Please try again.</p>
+    </div>
+  </div>
 </body>
 </html>
