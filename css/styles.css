@@ -38,10 +38,29 @@
   background-color: #f0f0f0;
 }
 
+.projects h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.projectImage {
+  border-radius: 12px;
+}
+
 
 /* Talks Section Styles */
 .talks {
   border-bottom: 8px solid #1d97c1;
+}
+
+.talks h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.talkImage {
+  border-radius: 12px;
+  height: 200px;
 }
 
 
