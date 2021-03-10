@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bulma.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <script type="text/javascript" src="./js/scripts.js"></script>
   <title>Matt Leonard | Software Engineer</title>
 </head>
 <body class="has-navbar-fixed-top">
@@ -13,13 +14,15 @@
   <section class="nav is-vcentered">
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+        <a href="https://mattleonard.io">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+        </a>
       </div>
       <div class="navbar-menu navbar-end">
-        <a href="" class="navbar-item">About</a>
-        <a href="" class="navbar-item">Projects</a>
-        <a href="" class="navbar-item">Talks</a>
-        <a href="" class="navbar-item">Contact</a>
+        <a class="navbar-item" onclick="aboutScroll()">About</a>
+        <a class="navbar-item" onclick="projectScroll()">Projects</a>
+        <a class="navbar-item" onclick="talkScroll()">Talks</a>
+        <a class="navbar-item" onclick="contactScroll()">Contact</a>
       </div>
     </nav>
   </section>
@@ -31,8 +34,8 @@
     </div>
   </section>
   <!-- About Section -->
-  <section class="section about">
-    <div class="container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+  <section id="aboutSection" class="about">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
       <h2>ABOUT</h2>
       <h6>I'm a software engineer working for an email marketing SaaS company in Bellevue, WA. I also co-organize BellevueJS, a meetup group where 
         I help others learn the latest JavaScript.
@@ -41,8 +44,8 @@
     </div>
   </section>
   <!-- Projects Section -->
-  <section class="section projects">
-    <div class="content">
+  <section id="projectSection" class="projects">
+    <div class="section content">
       <h2>PROJECTS</h2>
       <div class="columns">
         <div class="column">
@@ -81,8 +84,8 @@
     </div>
   </section>
   <!-- Talks Section -->
-  <section class="section talks">
-    <div class="content">
+  <section id="talkSection" class="talks">
+    <div class="section content">
       <h2>TALKS</h2>
       <div class="columns">
         <div class="column">
@@ -104,8 +107,8 @@
     </div>
   </section>
   <!-- Contact Section -->
-  <section class="section contact">
-    <div class="container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+  <section id="contactSection" class="contact">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
       <h2>CONTACT</h2>
       <h6>I'm open to opportunities about blah blah blah. Let's work together on something interesting!</h6>
       <form action="">
