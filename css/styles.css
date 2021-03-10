@@ -104,3 +104,40 @@
 .footer span {
   color: #1d97c1;
 }
+
+.toastRow {
+  display: flex;
+  justify-content: center;
+}
+#successToast, #errorToast {
+  visibility: hidden;
+  opacity: 1;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  position: fixed;
+  z-index: 1;
+}
+
+#successToast.show, #errorToast.show {
+  visibility: visible;
+  animation-name: toastSlide;
+  animation-duration: 2.5s;
+}
+
+@keyframes toastSlide {
+  0% { bottom: 0px; opacity: 0 }
+  25% { bottom: 30px; opacity: 1; }
+  90% { bottom: 30px; opacity: 1; }
+  100% { bottom:0px; opacity: 0; }
+}
+
+@-webkit-keyframes toastSlide {
+  0% { bottom: 0px; opacity: 0 }
+  25% { bottom: 30px; opacity: 1; }
+  90% { bottom: 30px; opacity: 1; }
+  100% { bottom:0px; opacity: 0; }
+}
+
