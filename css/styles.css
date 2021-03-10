@@ -69,6 +69,25 @@
   background-color: #393e46;
 }
 
+.contact h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.contact h2, .contact h6, .contact label {
+  color: #ffffff;
+}
+
+.input, .textarea {
+  background-color: #5c636e;
+  margin-bottom: 10px;
+}
+
+#submitButton {
+  float: right;
+  /* border: 2px solid #1d97c1; */
+}
+
 
 /* Footer Section Styles */
 .footer {
