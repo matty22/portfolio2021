@@ -24,7 +24,7 @@
 
 /* About Section Styles */
 .about  {
-  
+  padding: 30px 0px;
 }
 
 .about h2 {
@@ -36,6 +36,7 @@
 /* Project Section Styles */
 .projects {
   background-color: #f0f0f0;
+  padding: 30px 0px;
 }
 
 .projects h2 {
@@ -50,7 +51,7 @@
 
 /* Talks Section Styles */
 .talks {
-  border-bottom: 8px solid #1d97c1;
+  padding: 30px 0px;
 }
 
 .talks h2 {
@@ -66,6 +67,7 @@
 /* Contact Section Styles */
 .contact {
   background-color: #393e46;
+  padding: 30px 0px;
 }
 
 .contact h2 {
