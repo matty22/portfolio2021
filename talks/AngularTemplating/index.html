@@ -4,11 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bulma.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../../css/bulma.css">
+  <link rel="stylesheet" href="../../css/styles.css">
   <title>Matt Leonard | Software Engineer</title>
 </head>
 <body class="has-navbar-fixed-top">
-  <h1>Angular Templating Talk page</h1>
+  <!-- Nav Section -->
+  <section class="nav is-vcentered">
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a href="https://mattleonard.io">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+        </a>
+      </div>
+      <div class="navbar-menu navbar-end">
+        <a href="https://mattleonard.io" class="navbar-item">Home</a>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero Section -->
+  <section class="hero talkHero">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h2>Angular Templating Basics: Interpolation, Data Binding, Structural Directives, and Pipes</h2>
+    </div>
+  </section>
+  <!-- Talk Description Section -->
+  <section class="talkAbout">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h4>Intro</h4>
+      <p>
+        I've grown to really enjoy writing client side applications with Angular. Though of the big three front-end JS frameworks 
+        (React, Vue, & Angular), it has the steepest learning curve for beginners. Some of the earliest basics that newcomers to 
+        Angular need to learn is how Angular templates work and how to get them to do what you need. My talk on Angular Templating 
+        Basics covered four different utilities that Angular provides for templating: Interpolation, Data Binding, 
+        Structural Directives, and Pipes.  
+      </p>
+      <h4>Talk Overview</h4>
+      <p>
+        In the presentation, I covered four of the basic tools that Angular devs would use to write interactive user interfaces. 
+        After a short definition of terms on the unfortunate naming of the framework itself (AngularJS vs Angular), we jumped right 
+        into String Interpolation. We discussed how it works similarly to ES6 string interpolation, but uses its own syntax of double 
+        curly braces. <code>{{ example }}</code>One cool thing about Angular's string interpolation is its ability to evaluate expressions 
+        inside of the curly braces, like this: <code>{{ 1 + 1 }}</code> or <code>{{ exampleMethod(param) }}</code>
+      </p>
+      <p>  
+        The second tool we covered was data binding. Angular provides several different types of data binding, but the most common 
+        ones that new Angular devs will encounter first are event binding, property/attribute/class/style binding, and two-way binding. 
+        We discussed each of these in turn pointing out the template syntax for each kind of binding: <code>[property]</code>, 
+        <code>(event)</code>, and <code>[(twoWay)]</code> and how each could be used to perform a common template change. 
+      </p>
+      <p>
+        We moved on to Angular/s structural directives: <code>*ngIf</code>, <code>*ngFor</code>, and <code>*ngSwitch</code>. 
+        I explained the template syntax and how each might typically be used for displaying variable content in a template. 
+      </p>
+      <p>
+        Finally, we covered some of Angular's built in Pipes and how they can be used to filter values into specific formats. 
+        I pointed out the Pipes operator, | and we took a look at the currency, date/time, uppercase, lowercase, and titlecase 
+        pipes. I particularly like that pipes can be strung together to perform multiple manipulations on the same string and 
+        that devs can write their own pipes as needed. 
+      </p>
+      <p>
+        Overall, I think the presentation was a good introduction to Angular templating. I know when I first started learning 
+        Angular it was hard for me to get over how 'noisy' Angular templates looked, but once I started to become more comfortable 
+        with the different template syntaxes it was much easier to quick parse and read Angular templates. Perhaps this presentation 
+        was a gentle enough of an introduction to help others get past the 'noise'. 
+      </p>
+      <h4>Talk Download</h4>
+      <p>Unfortunately, I forgot to record the presentation. However, if you want to take a look at the slides, you can 
+        download them <a href="../../files/AngularTemplating.pptx">here</a>.
+      </p>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <p><span>&copy;2021</span> Matt Leonard</p>
+    </div>
+  </footer>
 </body>
 </html>

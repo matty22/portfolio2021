@@ -4,11 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bulma.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../../css/bulma.css">
+  <link rel="stylesheet" href="../../css/styles.css">
   <title>Matt Leonard | Software Engineer</title>
 </head>
 <body class="has-navbar-fixed-top">
-  <h1>Choosing Angular Talk page</h1>
+  <!-- Nav Section -->
+  <section class="nav is-vcentered">
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a href="https://mattleonard.io">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+        </a>
+      </div>
+      <div class="navbar-menu navbar-end">
+        <a href="https://mattleonard.io" class="navbar-item">Home</a>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero Section -->
+  <section class="hero talkHero">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h2>Choosing Angular 2 over React in 2016</h2>
+    </div>
+  </section>
+  <!-- Talk Description Section -->
+  <section class="talkAbout">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h4>Intro</h4>
+      <p>
+        I gave this talk in November 2016, I had pretty confidently thrown my hat in the Angular ring rather than 
+        the React ring by that point. I still prefer Angular to React. The gist of my talk was that the React ecosystem 
+        requires lots of technology decisions and that makes it a poor choice for a first JavaScript framework. I started 
+        out trying to learn React before I moved to Angular. I prefered that in Angular there was a defined way to do 
+        anything you needed to do rather than any one of 15 different routes in the React ecosystem. 
+      </p>
+      <h4>Talk Overview</h4>
+      <p>
+        The talk was based on a blog post I read titled Choosing Ember Over React in 2016. After I read that article, I 
+        started thinking about the reasons why I chose Angular 2 over React. One of the main reasons was that everything 
+        you might need to do in an application requires you to make a technology decision with React. That obviously confers 
+        a lot of flexibility for more experienced devs, but for people picking up their first JavaScript framework, it's hard 
+        to make those decisisons without having a frame of reference or not knowing what 90% of those technologies do. That 
+        problem does not exist in Angular. You do everything <em>the Angular Way™</em>
+      </p>
+      <p>  
+        Aside from the required technology decisions, there are a few other places where I see Angular taking the advantage:
+        <ul>
+          <li>TypeScript > JSX</li>
+          <li>Angular CLI</li>
+          <li>The Angular documentation is better than the React documentation</li>
+          <li>Not having to keep up with all the different libraries that do *insert thing here* in React</li>
+        </ul>
+      </p>
+      <p>
+        Angular does have its own set of downsides though:
+        <ul>
+          <li>There's a large API surface area, so there's lots to learn</li>
+          <li>Learning all of the ng-WhatHaveYous</li>
+          <li>It can be heavy if you don't use Ahead of Time compilation/Lazy Loading/Tree shaking</li>
+        </ul>
+      </p>
+      <h4>Talk Download</h4>
+      <p>You can watch the recording of the talk here:</p>
+      <video width="100%" controls>
+        <source src="../../assets/video/ChoosingAngular2.mov" />
+        Your browser does not support native video.
+      </video>
+      <p>If you want to take a look at the slides, you can download them <a href="../../files/ChoosingAngular.pptx">here</a>.</p>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <p><span>&copy;2021</span> Matt Leonard</p>
+    </div>
+  </footer>
 </body>
 </html>
