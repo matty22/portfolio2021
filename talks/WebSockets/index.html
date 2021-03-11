@@ -4,11 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bulma.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../../css/bulma.css">
+  <link rel="stylesheet" href="../../css/styles.css">
   <title>Matt Leonard | Software Engineer</title>
 </head>
 <body class="has-navbar-fixed-top">
-  <h1>Web Sockets Talk page</h1>
+  <!-- Nav Section -->
+  <section class="nav is-vcentered">
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a href="https://mattleonard.io">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+        </a>
+      </div>
+      <div class="navbar-menu navbar-end">
+        <a href="https://mattleonard.io" class="navbar-item">Home</a>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero Section -->
+  <section class="hero talkHero">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h2>Getting Your Feet Wet with<br>Web Sockets Using Socket.io</h2>
+    </div>
+  </section>
+  <!-- Talk Description Section -->
+  <section class="talkAbout">
+    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h4>Intro</h4>
+      <p>
+        A few years back, I got really interested in learning how web sockets work, so I built a small project to try them out. 
+        For that project, I built an application where you could search for a stock ticker symbol and it would chart the last 
+        100 days of activity on the stock market. It used websockets to update any clients that might be listening for changes 
+        on the server. You can see that project, <a href="https://matty22chartstocks.herokuapp.com/">here</a>. 
+      </p>
+      <p>
+        I chose to use socket.io to complete that project and found it simple and enjoyable to work with. I gave this talk at 
+        the BellevueJS meetup group in September 2017 to show attendees how easy it was to get started with web sockets.
+      </p>
+      <h4>Talk Overview</h4>
+      <p>
+        In the talk I quickly described what web sockets are and that they can help us to proactively update the client when the 
+        server receives new updated information. In the traditional HTTP request paradigm, if one user does something and POSTs some 
+        data to the server, a second user wouldn't see that change until they refreshed the browser so that their client would make 
+        a new GET request to the server. Websockets allow the server to push changes to any client that might be 'listening' without 
+        those clients have to make a GET request.
+      </p>
+      <p>
+        A really good example that a lot of people are familiar with is Trello. If you open up two client instances of the same 
+        Trello board and add a card on one, the other client will update without any additional request to the server. 
+      </p>
+      <p>
+        After giving a good example of websockets in action, we walked through the chat application tutorial that the socket.io 
+        website provides to quickly get started with web sockets. Then, I demonstrated the stock market ticker app that I referenced above.
+      </p>
+      <h4>Talk Download</h4>
+      <p>You can watch the recording of the talk here:</p>
+      <video width="100%" controls>
+        <source src="../../assets/video/WebSocketsTalk.mov" />
+        Your browser does not support native video.
+      </video>
+      <p>If you want to take a look at the slides, you can download them <a href="../../files/WebSockets.pptx">here</a>.</p>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <p><span>&copy;2021</span> Matt Leonard</p>
+    </div>
+  </footer>
 </body>
 </html>
