@@ -20,8 +20,13 @@
         <a href="https://mattleonard.io">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
         </a>
+        <a role="button" id="navbarBurger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" onclick="toggleBurger()">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="navbar-menu navbar-end">
+      <div id="navMenu" class="navbar-menu navbar-end">
         <a class="navbar-item" onclick="aboutScroll()">About</a>
         <a class="navbar-item" onclick="projectScroll()">Projects</a>
         <a class="navbar-item" onclick="talkScroll()">Talks</a>

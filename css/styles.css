@@ -151,3 +151,9 @@
 .talkAbout {
   padding: 10px 0px;
 }
+
+@media screen and (max-width: 1024px) {
+  .navbar-item {
+    color: #1d97c1;
+  }
+}
