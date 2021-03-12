@@ -18,7 +18,9 @@
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <a href="https://mattleonard.io">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+          <svg role="img" aria-labelledby="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g>
+            <title id="svg">Website Badge</title>
+          </svg>
         </a>
         <a role="button" id="navbarBurger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" onclick="toggleBurger()">
           <span aria-hidden="true"></span>
@@ -26,7 +28,7 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navMenu" class="navbar-menu navbar-end">
+      <div role="navigation" id="navMenu" class="navbar-menu navbar-end">
         <a class="navbar-item" onclick="aboutScroll()">About</a>
         <a class="navbar-item" onclick="projectScroll()">Projects</a>
         <a class="navbar-item" onclick="talkScroll()">Talks</a>
@@ -35,16 +37,16 @@
     </nav>
   </section>
   <!-- Hero Section -->
-  <section class="section hero">
+  <section role="banner" class="section hero">
     <div class="hero-body">
-      <p class="title">Hey, my name is Matt.</p>
-      <p class="subtitle">I'm a software engineer.</p>
+      <p class="title" role="heading" aria-level="1">Hey, my name is Matt.</p>
+      <p class="subtitle" role="heading" aria-level="1">I'm a software engineer.</p>
     </div>
   </section>
   <!-- About Section -->
   <section id="aboutSection" class="about">
     <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
-      <h2>ABOUT</h2>
+      <h2 role="heading" aria-level="2">ABOUT</h2>
       <h6>I'm a software engineer working for an email marketing SaaS company in Bellevue, WA. I also co-organize BellevueJS, a meetup group where 
         I help others learn the latest JavaScript.
       </h6>
@@ -54,38 +56,38 @@
   <!-- Projects Section -->
   <section id="projectSection" class="projects">
     <div class="section content">
-      <h2>PROJECTS</h2>
+      <h2 role="heading" aria-level="2">PROJECTS</h2>
       <div class="columns">
         <div class="column">
-          <a href="https://boardgameseek.web.app">
-            <img class="projectImage" src="./assets/images/gamesThumb.jpg" alt="BoardGameSeek Project" />
+          <a href="https://boardgameseek.web.app" aria-label="BoardGameSeek Project" title="BoardGameSeek Project">
+            <img role="img" class="projectImage" src="./assets/images/gamesThumb.jpg" alt="Dice and meeple on a game board">
           </a>
         </div>
         <div class="column">
-          <a href="https://github.com/matty22/JavaSchedulingSystem">
-            <img class="projectImage" src="./assets/images/schedulingThumb.jpg" alt="Java Scheduling Project" />
+          <a href="https://github.com/matty22/JavaSchedulingSystem" aria-label="Java Scheduling System Project" title="Java Scheduling System Project">
+            <img role="img" class="projectImage" src="./assets/images/schedulingThumb.jpg" alt="Person scheduling tasks on tablet" />
           </a>
         </div>
         <div class="column">
-          <a href="https://github.com/matty22/JavaInventorySystem">
-            <img class="projectImage" src="./assets/images/inventoryThumb.jpg" alt="Java Inventory Project" />
+          <a href="https://github.com/matty22/JavaInventorySystem" aria-label="Java Inventory System Project" title="Java Inventory System Project">
+            <img role="img" class="projectImage" src="./assets/images/inventoryThumb.jpg" alt="Tools and parts on red shelves" />
           </a>
         </div>
       </div>
       <div class="columns">
         <div class="column">
-          <a href="./projects/SurveyTool">
-            <img class="projectImage" src="./assets/images/surveysThumb.jpg" alt="Angular Survey Project" />
+          <a href="./projects/SurveyTool" aria-label="Survey Creation Tool Project" title="Survey Creation Tool Project">
+            <img role="img" class="projectImage" src="./assets/images/surveysThumb.jpg" alt="Laptop and paper surveys on a table" />
           </a>
         </div>
         <div class="column">
-          <a href="./projects/DungeonCrawler">
-            <img class="projectImage" src="./assets/images/dungeonThumb.jpg" alt="Angular Dungeon Crawler Project" />
+          <a href="./projects/DungeonCrawler" aria-label="Dungeon Crawler Game Project" title="Dungeon Crawler Game Project">
+            <img role="img" class="projectImage" src="./assets/images/dungeonThumb.jpg" alt="Castle room with stone pillars and wooden door" />
           </a>
         </div>
         <div class="column">
-          <a href="https://github.com/matty22/TravelingSalesperson">
-            <img class="projectImage" src="./assets/images/salesmanThumb.jpg" alt="Python Traveling Salesman Project" />
+          <a href="https://github.com/matty22/TravelingSalesperson" aria-label="Python Traveling Salesperson Project" title="Python Traveling Salesperson Project">
+            <img role="img" class="projectImage" src="./assets/images/salesmanThumb.jpg" alt="Two men shaking hands" />
           </a>
         </div>
       </div>
@@ -94,21 +96,21 @@
   <!-- Talks Section -->
   <section id="talkSection" class="talks">
     <div class="section content">
-      <h2>TALKS</h2>
+      <h2 role="heading" aria-level="2">TALKS</h2>
       <div class="columns">
         <div class="column">
-          <a href="./talks/WebSockets/">
-            <img class="talkImage" src="./assets/images/WebSockets.png" alt="Web Sockets Talk" />
+          <a href="./talks/WebSockets/" aria-label="Web Sockets talk" title="Web Sockets talk">
+            <img role="img" class="talkImage" src="./assets/images/WebSockets.png" alt="Web Sockets talk title slide" />
           </a>
         </div>
         <div class="column">
-          <a href="./talks/AngularTemplating/">
-            <img class="talkImage" src="./assets/images/AngularTemplating.png" alt="Angular Templating Talk" />
+          <a href="./talks/AngularTemplating/" aria-label="Angular Templating talk" title="Angular Templating talk">
+            <img role="img" class="talkImage" src="./assets/images/AngularTemplating.png" alt="Angular Templating talk title slide" />
           </a>
         </div>
         <div class="column">
-          <a href="./talks/ChoosingAngular/">
-            <img class="talkImage" src="./assets/images/ChoosingAngular.png" alt="Choosing Angular Talk" />
+          <a href="./talks/ChoosingAngular/" aria-label="Choosing Angular talk" title="Choosing Angular talk">
+            <img role="img" class="talkImage" src="./assets/images/ChoosingAngular.png" alt="Choosing Angular Talk title slide" />
           </a>
         </div>
       </div>
@@ -117,14 +119,14 @@
   <!-- Contact Section -->
   <section id="contactSection" class="contact">
     <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
-      <h2>CONTACT</h2>
+      <h2 role="heading" aria-level="2">CONTACT</h2>
       <h6>I'm open to opportunities about blah blah blah. Let's work together on something interesting!</h6>
-      <form id="contactForm" action="">
+      <form role="form" id="contactForm" action="">
         <label for="emailInput">Your email</label>
         <input class="input" id="emailInput" type="email" name="email" />
         <label for="messageInput">Your message</label>
-        <textarea class="textarea" name="message" id="messageInput" rows="5"></textarea>
-        <button type="submit" class="button is-primary" id="submitButton">Submit</button> 
+        <textarea class="textarea" name="message" id="messageInput" rows="5" aria-multiline="true" aria></textarea>
+        <button role="button" type="submit" class="button is-primary" id="submitButton">Submit</button> 
       </form>
     </div>
   </section>
@@ -133,18 +135,18 @@
     <div class="container column is-one-quarter-desktop is-one-quarter-tablet is-one-quarter-mobile">
       <div class="columns is-mobile">
         <div class="column">
-          <a href="https://github.com/matty22">
-            <img src="./assets/icons/github.svg" width="40" alt="Github Octocat Icon">
+          <a href="https://github.com/matty22" aria-label="Link to my GitHub" title="Link to my GitHub">
+            <img role="img" src="./assets/icons/github.svg" width="40" alt="Github Octocat Icon">
           </a>
         </div>
         <div class="column">
-          <a href="https://www.linkedin.com/in/matt-l-b159a63a/">
-            <img src="./assets/icons/linkedin.svg" width="40" alt="LinkedIn Icon">
+          <a href="https://www.linkedin.com/in/matt-l-b159a63a/" aria-label="Link to my LinkedIn" title="Link to my LinkedIn">
+            <img role="img" src="./assets/icons/linkedin.svg" width="40" alt="LinkedIn Icon">
           </a>
         </div>
         <div class="column">
-          <a href="mailto:matt.leonard.22@protonmail.com">
-            <img src="./assets/icons/mail.svg" width="40" alt="Email Icon">
+          <a href="mailto:matt.leonard.22@protonmail.com" aria-label="Link to email me" title="Link to email me">
+            <img role="img" src="./assets/icons/mail.svg" width="40" alt="Paper plane Icon">
           </a>
         </div>
       </div>
@@ -154,10 +156,10 @@
     </div>
   </footer>
   <div class="container toastRow">
-    <div class="content" id="successToast">
+    <div role="alert" class="content" id="successToast">
       <p>Your submission was successful.</p>
     </div>
-    <div class="content" id="errorToast">
+    <div role="alert" class="content" id="errorToast">
       <p>Something went wrong. Please try again.</p>
     </div>
   </div>

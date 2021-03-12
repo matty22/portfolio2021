@@ -18,7 +18,9 @@
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <a href="https://mattleonard.io">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g></svg>
+          <svg role="img" aria-labelledby="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50pt" height="40pt" viewBox="0 0 99 89"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" fill="#393e46" stroke="none"><path d="M250 552 c0 -157 0 -158 29 -203 16 -24 70 -84 120 -134 l91 -90 91 90 c50 50 104 110 120 134 29 45 29 46 29 203 l0 158 -240 0 -240 0 0 -158z m440 21 l0 -97 -33 32 -33 32 -29 -30 -29 -30 -38 37 -38 37 -35 -34 -35 -34 -28 27 -28 27 -29 -30 c-16 -16 -32 -30 -37 -30 -4 0 -8 43 -8 95 l0 95 200 0 200 0 0 -97z"/></g>
+            <title id="svg">Website Badge</title>
+          </svg>
         </a>
         <a role="button" id="navbarBurger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" onclick="toggleBurger()">
           <span aria-hidden="true"></span>
@@ -26,21 +28,21 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navMenu" class="navbar-menu navbar-end">
+      <div role="navigation" id="navMenu" class="navbar-menu navbar-end">
         <a href="https://mattleonard.io" class="navbar-item">Home</a>
       </div>
     </nav>
   </section>
   <!-- Hero Section -->
-  <section class="hero talkHero">
+  <section role="banner" class="hero talkHero">
     <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
-      <h2>Choosing Angular 2 over React in 2016</h2>
+      <h2 role="heading" aria-level="1">Choosing Angular 2 over React in 2016</h2>
     </div>
   </section>
   <!-- Talk Description Section -->
   <section class="talkAbout">
-    <div class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
-      <h4>Intro</h4>
+    <div role="article" class="section container column is-half-desktop is-two-thirds-tablet is-three-quarters-mobile content">
+      <h4 role="heading" aria-level="2">Intro</h4>
       <p>
         I gave this talk in November 2016, I had pretty confidently thrown my hat in the Angular ring rather than 
         the React ring by that point. I still prefer Angular to React. The gist of my talk was that the React ecosystem 
@@ -48,7 +50,7 @@
         out trying to learn React before I moved to Angular. I prefered that in Angular there was a defined way to do 
         anything you needed to do rather than any one of 15 different routes in the React ecosystem. 
       </p>
-      <h4>Talk Overview</h4>
+      <h4 role="heading" aria-level="2">Talk Overview</h4>
       <p>
         The talk was based on a blog post I read titled Choosing Ember Over React in 2016. After I read that article, I 
         started thinking about the reasons why I chose Angular 2 over React. One of the main reasons was that everything 
@@ -74,7 +76,7 @@
           <li>It can be heavy if you don't use Ahead of Time compilation/Lazy Loading/Tree shaking</li>
         </ul>
       </p>
-      <h4>Talk Download</h4>
+      <h4 role="heading" aria-level="2">Talk Download</h4>
       <p>You can watch the recording of the talk here:</p>
       <video width="100%" controls>
         <source src="../../assets/video/ChoosingAngular2.mov" />
