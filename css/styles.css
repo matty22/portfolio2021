@@ -44,8 +44,16 @@
   text-align: center;
 }
 
-.projectImage {
+.thumbnailGrid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.thumbnailImage {
   border-radius: 12px;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 
@@ -61,6 +69,85 @@
 
 .talkImage {
   border-radius: 12px;
+}
+
+
+/* Overlay Styles */
+.hiddenOverlay {
+  visibility: hidden;
+  opacity: 0.9;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.hiddenOverlay.overlay {
+  visibility: visible;
+  animation-name: overlayIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+}
+
+.hiddenOverlay h3.overlay, .hiddenOverlay p.overlay {
+  visibility: visible;
+  color: #ffffff;
+  /* font-size: 1em; */
+  /* animation-name: overlayIn;
+  animation-timing-function: step-start;
+  animation-duration: 0.5s; */
+}
+
+.hiddenOverlay h3.overlay {
+  font-size: 1.5em;
+  animation-name: overlayTitle;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+}
+
+.hiddenOverlay p.overlay {
+  font-size: 1em;
+  animation-name: overlayIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+}
+
+@keyframes overlayIn {
+  0%    { width: 10%; color: transparent; font-size: 0; }
+  60%   { font-size: 0.4em; }
+  80%   { width: 80%; color: transparent; font-size: 0.8em; }
+  100%  { width: 100%; color: #ffffff; font-size: 1em; }
+}
+
+@-webkit-keyframes overlayIn {
+  0%    { width: 10%; color: transparent; font-size: 0; }
+  60%   { font-size: 0.4em; }
+  80%   { width: 80%; color: transparent; font-size: 0.8em; }
+  100%  { width: 100%; color: #ffffff; font-size: 1em; }
+}
+
+@keyframes overlayTitle {
+  0%    { color: transparent; font-size: 0; }
+  30%   { color: transparent; font-size: 0.4em }
+  60%   { color: transparent; font-size: 0.8em; }
+  80%   { color: transparent; font-size: 1.0em; }
+  90%   { color: transparent; font-size: 1.3em; }
+  100%  { color: #ffffff; font-size: 1.5em; }
+}
+
+@-webkit-keyframes overlayTitle {
+  0%    { color: transparent; font-size: 0; }
+  30%   { color: transparent; font-size: 0.4em }
+  60%   { color: transparent; font-size: 0.8em; }
+  80%   { color: transparent; font-size: 1.0em; }
+  90%   { color: transparent; font-size: 1.3em; }
+  100%  { color: #ffffff; font-size: 1.5em; }
 }
 
 
@@ -155,5 +242,33 @@
 @media screen and (max-width: 1024px) {
   .navbar-item {
     color: #1d97c1;
+  }
+
+  .hiddenOverlay, .hiddenOverlay h3 {
+    visibility: visible;
+    color: #ffffff;
+  }
+
+  @keyframes overlayIn {
+    0%  { width: 100%; }
+  }
+
+  @-webkit-keyframes overlayIn {
+    0%  { width: 100%; }
+  }
+
+  @keyframes overlayTitle {
+    0%  { font-size: 1.5em; }
+  }
+
+  @-webkit-keyframes overlayTitle {
+    0%  { font-size: 1.5em; }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .hiddenOverlay p {
+    display: none;
   }
 }

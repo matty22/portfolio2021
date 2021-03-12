@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", function() {
   let submitButton = document.getElementById("submitButton");
   let successToast = document.getElementById("successToast");
   let errorToast = document.getElementById("errorToast");
+  let thumbnailImages = [...document.getElementsByClassName("thumbnailGrid")];
 
   // Finish success handling
   function formSuccess() {
@@ -60,6 +61,24 @@ window.addEventListener("DOMContentLoaded", function() {
       console.log(error);
     });
   });
+
+  // Project and Talks images hover event listeners
+  thumbnailImages.forEach((grid) => {
+    grid.addEventListener("mouseover", () => {
+      grid.children[1].classList.add("overlay");
+      grid.children[1].children[0].classList.add("overlay");
+      grid.children[1].children[1].classList.add("overlay");
+    });
+  });
+
+  thumbnailImages.forEach((grid) => {
+    grid.addEventListener("mouseout", () => {
+      grid.children[1].classList.remove("overlay");
+      grid.children[1].children[0].classList.remove("overlay");
+      grid.children[1].children[1].classList.remove("overlay");
+    });
+  });
+
 });
 
 
@@ -93,8 +112,7 @@ function contactScroll() {
 }
 
 
-// Burger menu scripts
-
+// Burger menu function
 function toggleBurger() {
   let burgerIcon = document.getElementById("navbarBurger");
   let navMenu = document.getElementById("navMenu");
