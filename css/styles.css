@@ -1,8 +1,11 @@
 
+h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
 
-/* Nav Section Styles */
+/*** Nav Section Styles ***/
 .navbar {
-  /* background-color: #5c636e; */
   background-color: #1d97c1;
 }
 
@@ -11,7 +14,8 @@
 }
 
 
-/* Hero Section Styles */
+
+/*** Hero Section Styles ***/
 .hero {
   background-color: #393e46;
   border-bottom: 8px solid #1d97c1;
@@ -22,49 +26,35 @@
 }
 
 
-/* About Section Styles */
+
+/*** About Section Styles ***/
 .about  {
   padding: 30px 0px;
 }
 
-.about h2 {
-  padding-bottom: 15px;
-  text-align: center;
-}
 
 
-/* Project Section Styles */
+/*** Project Section Styles ***/
 .projects {
   background-color: #f0f0f0;
   padding: 30px 0px;
 }
 
-.projects h2 {
-  padding-bottom: 15px;
-  text-align: center;
-}
-
 .thumbnailGrid {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
 }
 
 .thumbnailImage {
   border-radius: 12px;
-  grid-row-start: 1;
   grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 
-/* Talks Section Styles */
+
+/*** Talks Section Styles ***/
 .talks {
   padding: 30px 0px;
-}
-
-.talks h2 {
-  padding-bottom: 15px;
-  text-align: center;
 }
 
 .talkImage {
@@ -72,94 +62,87 @@
 }
 
 
-/* Overlay Styles */
+
+/*** Overlay Styles ***/
 .hiddenOverlay {
-  visibility: hidden;
-  opacity: 0.9;
+  align-items: center;
   background-color: #1a1a1a;
   border-radius: 12px;
-  grid-row-start: 1;
-  grid-column-start: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
   justify-content: center;
-  text-align: center;
+  opacity: 0.9;
   padding: 0px 20px;
+  text-align: center;
+  visibility: hidden;
 }
 
 .hiddenOverlay.overlay {
-  visibility: visible;
-  animation-name: overlayIn;
-  animation-timing-function: ease-in;
   animation-duration: 0.4s;
+  animation-name: overlayIn;
+  animation-timing-function: ease-in-out;
+  visibility: visible;
 }
 
 .hiddenOverlay h3.overlay, .hiddenOverlay p.overlay {
-  visibility: visible;
   color: #ffffff;
-  /* font-size: 1em; */
-  /* animation-name: overlayIn;
-  animation-timing-function: step-start;
-  animation-duration: 0.5s; */
+  visibility: visible;
 }
 
 .hiddenOverlay h3.overlay {
-  font-size: 1.5em;
+  animation-duration: 0.8s;
   animation-name: overlayTitle;
-  animation-timing-function: ease-in;
-  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  font-size: 1.5em;
 }
 
 .hiddenOverlay p.overlay {
+  animation-duration: 0.6s;
+  animation-name: overlayParagraph;
+  animation-timing-function: ease-in-out;
   font-size: 1em;
-  animation-name: overlayIn;
-  animation-timing-function: ease-in;
-  animation-duration: 0.4s;
 }
 
 @keyframes overlayIn {
-  0%    { width: 10%; color: transparent; font-size: 0; }
-  60%   { font-size: 0.4em; }
-  80%   { width: 80%; color: transparent; font-size: 0.8em; }
-  100%  { width: 100%; color: #ffffff; font-size: 1em; }
+  0%    { color: transparent; font-size: 0.4em; width: 20%; }
+  100%  { color: #ffffff; width: 100%;}
 }
 
 @-webkit-keyframes overlayIn {
-  0%    { width: 10%; color: transparent; font-size: 0; }
-  60%   { font-size: 0.4em; }
-  80%   { width: 80%; color: transparent; font-size: 0.8em; }
-  100%  { width: 100%; color: #ffffff; font-size: 1em; }
+  0%    { color: transparent; font-size: 0.4em; width: 20%; }
+  100%  { color: #ffffff; width: 100%; }
 }
 
 @keyframes overlayTitle {
-  0%    { color: transparent; font-size: 0; }
-  30%   { color: transparent; font-size: 0.4em }
-  60%   { color: transparent; font-size: 0.8em; }
-  80%   { color: transparent; font-size: 1.0em; }
-  90%   { color: transparent; font-size: 1.3em; }
-  100%  { color: #ffffff; font-size: 1.5em; }
+  0%    { color: transparent; }
+  100%  { color: #ffffff; }
 }
 
 @-webkit-keyframes overlayTitle {
-  0%    { color: transparent; font-size: 0; }
-  30%   { color: transparent; font-size: 0.4em }
-  60%   { color: transparent; font-size: 0.8em; }
-  80%   { color: transparent; font-size: 1.0em; }
-  90%   { color: transparent; font-size: 1.3em; }
-  100%  { color: #ffffff; font-size: 1.5em; }
+  0%    { color: transparent; }
+  100%  { color: #ffffff; }
+}
+
+@keyframes overlayParagraph {
+  0%    { color: transparent; }
+  100%  { color: #ffffff; }
+}
+
+@-webkit-keyframes overlayParagraph {
+  0%    { color: transparent; }
+  100%  { color: #ffffff; }
 }
 
 
-/* Contact Section Styles */
+
+
+
+/*** Contact Section Styles ***/
 .contact {
   background-color: #393e46;
   padding: 30px 0px;
-}
-
-.contact h2 {
-  padding-bottom: 15px;
-  text-align: center;
 }
 
 .contact h2, .contact h6, .contact label {
@@ -176,11 +159,12 @@
 }
 
 
-/* Footer Section Styles */
+
+/*** Footer Section Styles ***/
 .footer {
   background-color: #5c636e;
-  text-align: center;
   padding: 25px 0px;
+  text-align: center;
 }
 
 .footer p {
@@ -192,26 +176,30 @@
   color: #1d97c1;
 }
 
+
+
+/*** Toast Styles ***/
 .toastRow {
   display: flex;
   justify-content: center;
 }
+
 #successToast, #errorToast {
-  visibility: hidden;
-  opacity: 1;
-  min-width: 250px;
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
-  text-align: center;
+  min-width: 250px;
+  opacity: 1;
   padding: 15px 10px;
   position: fixed;
+  text-align: center;
+  visibility: hidden;
   z-index: 1;
 }
 
 #successToast.show, #errorToast.show {
-  visibility: visible;
-  animation-name: toastSlide;
   animation-duration: 2.5s;
+  animation-name: toastSlide;
+  visibility: visible;
 }
 
 @keyframes toastSlide {
@@ -228,25 +216,28 @@
   100% { bottom:0px; opacity: 0; }
 }
 
-/* Talks pages styles */
 
+
+/*** Talks pages styles ***/
 .talkHero h2 {
   color: #ffffff;
-  text-align: center;
 }
 
 .talkAbout {
   padding: 10px 0px;
 }
 
+
+
+/*** Media queries ***/
 @media screen and (max-width: 1024px) {
   .navbar-item {
     color: #1d97c1;
   }
 
   .hiddenOverlay, .hiddenOverlay h3 {
-    visibility: visible;
     color: #ffffff;
+    visibility: visible;
   }
 
   @keyframes overlayIn {
@@ -263,7 +254,15 @@
 
   @-webkit-keyframes overlayTitle {
     0%  { font-size: 1.5em; }
+  } 
+
+  @keyframes overlayParagraph {
+    0% { font-size: 1em; }
   }
+
+  @-webkit-keyframes overlayParagraph {
+    0%  { font-size: 1em; }
+  } 
 
 }
 

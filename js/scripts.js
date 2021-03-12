@@ -1,26 +1,33 @@
+"use strict";
 
 // Set up contact form behaviors
 window.addEventListener("DOMContentLoaded", function() {
-  let form = document.getElementById("contactForm");
-  let emailField = document.getElementById("emailInput");
-  let messageField = document.getElementById("messageInput");
-  let submitButton = document.getElementById("submitButton");
-  let successToast = document.getElementById("successToast");
-  let errorToast = document.getElementById("errorToast");
-  let thumbnailImages = [...document.getElementsByClassName("thumbnailGrid")];
+  const form = document.getElementById("contactForm");
+  const emailField = document.getElementById("emailInput");
+  const messageField = document.getElementById("messageInput");
+  const submitButton = document.getElementById("submitButton");
+  const successToast = document.getElementById("successToast");
+  const errorToast = document.getElementById("errorToast");
+  const thumbnailImages = [...document.getElementsByClassName("thumbnailGrid")];
 
-  // Finish success handling
+  
+  
+  // Form Success Handler
   function formSuccess() {
     form.reset();
     submitButton.classList.remove("is-loading");
     successToast.classList.add("show");
   }
 
-  // Finish error handling
+
+
+  // Form Error Handler
   function formError() {
     submitButton.classList.remove("is-loading");
     errorToast.classList.add("show");
   }
+
+
 
   // Contact form email field validation
   emailField.addEventListener("blur", function() {
@@ -35,6 +42,8 @@ window.addEventListener("DOMContentLoaded", function() {
       submitButton.removeAttribute("disabled");
     }
   });
+
+
 
   // Contact form submission
   form.addEventListener("submit", function(event) {
@@ -62,6 +71,8 @@ window.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+
+
   // Project and Talks images hover event listeners
   thumbnailImages.forEach((grid) => {
     grid.addEventListener("mouseover", () => {
@@ -78,8 +89,8 @@ window.addEventListener("DOMContentLoaded", function() {
       grid.children[1].children[1].classList.remove("overlay");
     });
   });
-
 });
+
 
 
 // Scroll functions
@@ -110,6 +121,7 @@ function contactScroll() {
     behavior: "smooth"
   });
 }
+
 
 
 // Burger menu function
